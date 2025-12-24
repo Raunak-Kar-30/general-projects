@@ -2,8 +2,12 @@
 // We do this by writing the /dev/zero (which is a file containing only binary zeros - or ASCII null character) file as well as the /dev/random (which only contains random gibberish)
 // and by measuring the time elapsed, we can determine the write speed of the disk.
 //
-// I DO NOT own this project, rather just following a tutorial in the hopes of learning something new :-).
+// Trying to learn some system programming by following a tutorial.
+// It is not a one to one copy of the original program by Daniel Hirsch, so if you want the program code written by him, kindly follow the link given in
+// the README.md file.
+// I have modified the program according to my needs, as and when I have felt appropriate to do so.
 //
+// Author : Raunak Kar
 // CREDITS : DANIEL HIRSCH from Youtube.
 
 // Includes
