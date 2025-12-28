@@ -1,5 +1,6 @@
 
-# A simple disk benchmarking utility for linux\
+# A simple disk benchmarking utility for linux
+\
 This is a simple disk benchmarking project that utilizes the /dev/zero and /dev/random files in the linux system to\
 benchmark the read(not implemented yet) and write speeds of whichever disk you pass as an argument to this program.\
 \
