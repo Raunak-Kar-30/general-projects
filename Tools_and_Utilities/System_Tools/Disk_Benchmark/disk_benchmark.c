@@ -1,11 +1,7 @@
 // Simple program for measuring the read and write speed of any disk.
-// We do this by writing the /dev/zero (which is a file containing only binary zeros - or ASCII null character) file as well as the /dev/random (which only contains random gibberish)
+// We do this by writing the /dev/zero (which is a file containing only binary zeros - or ASCII null character) file,
+// as well as the /dev/random (which only contains random gibberish)
 // and by measuring the time elapsed, we can determine the write speed of the disk.
-//
-// Trying to learn some system programming by following a tutorial.
-// It is not a one to one copy of the original program by Daniel Hirsch, so if you want the program code written by him, kindly follow the link given in
-// the README.md file.
-// I have modified the program according to my needs, as and when I have felt appropriate to do so.
 //
 // Author : Raunak Kar
 // CREDITS : DANIEL HIRSCH from Youtube.
@@ -14,6 +10,14 @@
 // 1. 	If user signals an exit, the program must be able to safely stop the functionality, irrespective of it's current state and
 //		exit the operation.
 //		It must be able to close the file pointer, remove the binaries from the disk path and exit the program with a message
+//
+// 2. 	Read speeds are not yet implemented
+//
+// 3. 	Give user options to choose what kind of speed test they want to perform and also the length of the speed test,
+// 		(based on which size of the file written/read changes)
+//
+// 4.	For any speed test, perform read writes of 3 or more files of different sizes (but in a fixed range - depending on the length of speed test chosen) 
+// 		for an average and more practical speed calculation rather than reading or writing just one file. 
 
 // Includes
 #include <stdio.h>
